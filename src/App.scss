@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.counsellor-banner {
+
+
+  background: url(./assets/images/counsellors/banner.png) no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.my-account-side-menu-wrapper {
+  background-image: linear-gradient(to bottom, var(--tail-shade-dark), var(--tail-shade-dark), var(--tail-shade-medium), var(--tail-shade-medium), var(--tail-shade-medium), var(--tail-shade-medium), var(--grey-shade-dark), var(--beinge), var(--beinge), var(--beinge));
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 40px 10px;
+  height: 100%;
+}
+
+.user-details-input {
+
+  input {
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid #929090 !important;
+    // width: 90%;
+
+    &:focus {
+
+
+      outline: none !important;
+      outline-offset: 0 !important;
+      // background: yellow !important;
+
+    }
+  }
+
+
+}
+
+.date-input {
+  width: 100%;
+  padding: 4px;
+  background-color: rgb(249 250 251 / 1);
+  border-color: rgb(209 213 219 / 1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+}

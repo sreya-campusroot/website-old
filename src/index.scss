@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tail-shade-dark: #469697;
+  --tail-shade-medium: #5BA199;
+  --tail-shade-light-2: #e8f0f0cc;
+  --tail-shade-light: #F9FEFECC;
+  --grey-shade-dark-2: #9c9c9c;
+  --grey-shade-dark: #BBC6C8;
+  --grey-shade-medium: #E5E3E4;
+  --grey-shade-light-2: #FBFBF7;
+  --grey-shade-light: #FCF9F5;
+  --beinge: #DDBEAA;
+  --beinge-shade-light: #FCF2E5;
+  --white: #ffffff;
+  --blue-shade-light: rgb(168, 223, 236);
+  --medium_gray: #D9D9D9;
+  --black: #000000;
+  --success: #4fee67;
+  --error: rgb(238, 85, 85);
+  --green-shade-dark: #316539;
+  --green-shade-light: #D5EBD9;
+
+  --red-shade-light: rgb(238, 85, 85);
+  --red-shade-dark: rgb(241, 69, 69);
+
+
+  /* Add more custom colors as needed */
+}
+
+@layer base {
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+}
+
+@layer utilities {
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}
+
+//footer 
+.footer {
+  background-image: linear-gradient(to bottom, var(--tail-shade-dark), var(--tail-shade-medium), var(--grey-shade-dark), var(--beinge), var(--beinge), var(--beinge));
+}
+
+.custom-modal {
+  background: rgba(0, 0, 0, 0.3) !important
+}
+
+.active-tab {
+  border-bottom: 2px solid var(--tail-shade-dark) !important
+}
+
+.dragable-carousal {
+
+  cursor: pointer;
+
+  .alice-carousel__dots {
+    display: none;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    // display: none;
+    margin-top: -100px;
+  }
+
+
+}
+
+.custom-carousal {
+  cursor: pointer;
+
+  .alice-carousel__dots {
+    display: none;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    // display: none;
+    background-color: var(--tail-shade-dark);
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    /* display: flex; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    position: absolute;
+
+    top: 40%;
+
+    .alice-carousel__prev-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .alice-carousel__prev-btn-item {
+        span {
+          font-size: 20px;
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  .alice-carousel__prev-btn {
+    left: -5%;
+
+  }
+
+  .alice-carousel__next-btn {
+
+    right: -5%;
+
+  }
+
+
+
+
+}
+
+.filter-icon-dropdown {
+  button {
+    padding: 0px 5px !important;
+  }
+
+  svg {
+    display: none !important;
+  }
+}
